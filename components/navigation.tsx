@@ -20,14 +20,24 @@ const Navigation = ({ session }: { session: Session | null }) => {
             </Link>
           </div>
           {session ? (
-            <div>
-              <Link
-                className="text-gray-600 hover:text-blue-600"
-                href="/profile"
-              >
-                Profile
-              </Link>
-            </div>
+            <>
+              <div>
+                <Link
+                  className="text-gray-600 hover:text-blue-600"
+                  href="/profile"
+                >
+                  Profile
+                </Link>
+              </div>
+              <div>
+                 <Link
+                 className="text-gray-600 hover:text-blue-600"
+                 href="/chats"
+                >
+                 Chats
+               </Link>
+              </div>
+            </>
           ) : (
             <>
               <div>
